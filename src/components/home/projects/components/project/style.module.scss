@@ -1,0 +1,62 @@
+.project {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px 50px 100px;
+    border-bottom: 1px solid rgb(255 255 255 / 17%);
+    cursor: pointer;
+    transition: all 0.2s;
+
+    h2 {
+        font-size: 33px;
+        margin: 0px;
+        font-weight: 500;
+        transition: all 0.4s;
+    }
+
+    p {
+        transition: all 0.4s;
+        font-weight: 300;
+    }
+
+    &:last-of-type {
+        // border-bottom: 1px solid rgba(0, 0, 0, 0.167);
+    }
+
+    &:hover {
+        opacity: 1;
+
+        h2 {
+            transform: translateX(-10px);
+
+        }
+
+        p {
+            transform: translateX(10px);
+        }
+    }
+}
+
+
+
+// ||||||| media query ||||||||
+@media(max-width:768px) {
+
+    .project {
+        padding: 25px 0;
+        display: block;
+
+        p {
+            margin: 0;
+        }
+    }
+
+}
+
+@media(max-width:520px) {
+
+    .project h2 {
+        font-size: 26px;
+    }
+}

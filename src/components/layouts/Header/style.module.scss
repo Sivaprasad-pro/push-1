@@ -1,0 +1,242 @@
+.header {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    top: 0;
+    color: white;
+    padding: 35px;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 300;
+    box-sizing: border-box;
+    align-items: center;
+
+
+
+    .logo {
+        display: flex;
+        cursor: pointer;
+
+        p {
+            margin: 0px;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .name {
+            display: flex;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+            margin-left: 5px;
+            transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+            width: 200px;
+
+            p {
+                position: relative;
+                transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+
+                &:nth-of-type(2) {
+                    padding-left: 0.3em;
+                }
+
+                &:nth-of-type(3) {
+                    position: absolute;
+                    left: 120px;
+                    padding-left: 0.3em;
+                }
+            }
+        }
+
+        .snellenberg {
+            font-size: 22px;
+        }
+
+        &:hover {
+            .copyright {
+                transform: rotate(360deg);
+            }
+
+            .name {
+                padding-right: 30px;
+
+                .codeBy {
+                    transform: translateX(-100%);
+                }
+
+                .dennis {
+                    transform: translateX(-65px);
+                }
+
+                .snellenberg {
+                    transform: translateX(-166px);
+                }
+            }
+        }
+    }
+
+    .nav {
+        display: flex;
+        align-items: center;
+
+        .el {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+            padding: 15px;
+            cursor: pointer;
+
+            &:hover {
+                .indicator {
+                    transform: scale(1);
+                }
+            }
+
+            .indicator {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 45px;
+                left: 50%;
+                background-color: white;
+                border-radius: 50%;
+                transform: scale(0) translateX(-50%);
+                transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+            }
+        }
+
+        a {
+            cursor: pointer;
+        }
+    }
+}
+
+.headerButtonContainer {
+    transform: scale(1);
+    position: fixed;
+    right: 0px;
+    z-index: 92;
+
+    .button {
+        position: relative;
+        margin: 20px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #1C1D20;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .burger {
+        width: 100%;
+        position: relative;
+        z-index: 1;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 40%;
+            margin: auto;
+            background-color: white;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        &::after {
+            top: -5px;
+        }
+
+        &::before {
+            top: 5px;
+        }
+    }
+
+    .burgerActive {
+
+        &::after {
+            transform: rotate(45deg);
+            top: -1px;
+        }
+
+        &::before {
+            transform: rotate(-45deg);
+            top: 0px;
+        }
+
+    }
+}
+
+.headerContactButton {
+    position: absolute;
+    z-index: 6;
+    right: 125px;
+    top: 32px;
+    color: white;
+
+}
+
+.headerContactButton>div {
+    border: 1px solid rgb(249, 23, 23);
+}
+
+
+
+
+/*  |||||||||||| media query ||||||||||| */
+@media(max-width:768px) {
+    .header .logo img {
+        width: 130px;
+    }
+
+    .headerButtonContainer .button {
+        margin: 12px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .header {
+
+        padding: 15px;
+    }
+
+    .headerContactButton {
+        right: 75px;
+        top: 10px;
+    }
+
+    .headerContactButton>div {
+        font-size: 15px;
+        padding: 11px 30px 11px 30px;
+    }
+
+    .header .logo .name {
+        width: 134px;
+    }
+
+    .header .logo .name p:nth-of-type(2) {
+        padding-left: 1.5em;
+    }
+}
+
+@media(max-width:520px) {
+    .header .logo .name {
+        width: 130px;
+    }
+
+    .header .logo .snellenberg {
+        font-size: 19px;
+    }
+
+    .header .logo .name p:nth-of-type(2) {
+        padding-left: 2.3em;
+    }
+}

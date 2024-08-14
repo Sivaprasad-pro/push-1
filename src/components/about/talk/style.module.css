@@ -1,0 +1,27 @@
+.section_talk {
+    padding-top: 50px;
+    position: relative;
+    /* z-index: 2; */
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(1800deg, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(1800deg, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(1800deg, rgba(0, 0, 0, 1) 72%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.section_talk .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.talk_wrap {
+    padding: 5px;
+
+}
+
+.talk_wrap iframe {
+    border-radius: 10px;
+}

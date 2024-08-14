@@ -1,0 +1,275 @@
+.page_about .section_top {
+    background-color: black;
+    height: 210px;
+    /* margin-bottom: 80px; */
+}
+
+.page_about .section1 {
+    padding-top: 80px;
+}
+
+.page_about .section1 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.page_about .section1 .process_box .num {
+    font-weight: 100;
+}
+
+
+
+.page_about .section1 .process_box {
+    /* background-color: #ffb8b836; */
+    backdrop-filter: blur(30px);
+}
+
+.page_about .section1 .process_box p {
+    font-size: 15px;
+}
+
+.page_about .section1 .process_box p::after {
+    content: "";
+    height: 3px;
+    width: 71px;
+    background-color: white;
+    display: block;
+    margin-top: 12px;
+}
+
+.page_about .section2 {
+    padding-top: 80px;
+}
+
+.page_about .section2 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.page_about .section3 {
+    padding: 100px 0 0 0;
+}
+
+.page_about .section3 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+
+}
+
+
+.page_about .section4 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+
+}
+
+.page_about .section4 .kodifine_wrap {
+    background-image: url('../../../public/graphics/net.svg');
+    background-color: #8fc23e38;
+    backdrop-filter: blur(20px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page_about .section4 .kodifine_wrap img {
+    width: 250px;
+}
+
+.page_about .section4 .kodifine_wrap p {
+    max-width: 600px;
+}
+
+
+
+.page_about .section5 {
+    padding-top: 100px;
+
+}
+
+.page_about .section5 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.page_about .section5 img {
+    /* filter: invert(1); */
+    width: 110px;
+    height: 145px;
+    object-fit: contain;
+}
+
+.page_about .section5 .bm {
+    border-right: 1px solid #313131 !important;
+}
+
+.page_about .section6 {
+    padding-top: 100px;
+}
+
+.page_about .section6 .counter_wrap {
+    margin-bottom: 0;
+    background-color: #fcfcfc36;
+    backdrop-filter: blur(10px);
+}
+
+.page_about .section7 {
+    padding-top: 100px;
+}
+
+.page_about .section7 .title {
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 900;
+    line-height: 1;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: -1;
+    background: #000000;
+    background: linear-gradient(to top, #80592500 0%, #ffd99570 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    left: 0;
+    top: 0;
+}
+
+.page_about .section7 .award_wrap img {
+    max-width: 500px;
+    margin: auto;
+}
+
+.page_about .section8 {
+    padding-top: 100px;
+}
+
+.page_about .section8 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+.page_about .section10 {
+    padding-top: 30px;
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 2;
+    background: rgb(0, 0, 0);
+
+}
+
+.page_about .section10 .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.page_about .section10 .playPauseButton {
+    background-color: rgb(255 255 255 / 30%);
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 21px 0px #0000004f;
+}
+
+.page_about .section10 .playPauseButton svg {
+    width: 35px;
+    height: 35px;
+}
+
+.page_about .section10 .playPauseButton:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.page_about .section10 .pauseButton {
+    bottom: 10px;
+    left: 10px;
+    position: absolute;
+}
+
+.page_about .section10 .playButton {
+    position: absolute;
+    left: 43%;
+    top: 43%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.page_about .circleContainer {
+    background-color: red;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.page_about .circleContainer .circle {
+    height: 1550%;
+    width: 120%;
+    left: -10%;
+    border-radius: 0 0 50% 50%;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+}
+
+
+
+
+
+
+
+/*|||||||| media query |||||||||*/
+@media(max-width:768px) {
+    .circleContainer {
+        display: none;
+    }
+}
+
+@media (max-width:520px) {
+    .page_about .title {
+        font-size: 35px !important;
+    }
+
+    .page_about .section10 .playButton {
+        position: absolute;
+        left: 41%;
+        top: 34%;
+        width: 60px;
+        height: 60px;
+        padding: 0px;
+
+    }
+
+    .page_about .section7 {
+        position: relative;
+        z-index: 2;
+
+        background: rgb(0, 0, 0);
+
+    }
+}

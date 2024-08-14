@@ -1,0 +1,49 @@
+.page_insights {
+    background-color: black;
+}
+
+.page_insights .section_top {
+    background-color: black;
+    height: 210px;
+    /* margin-bottom: 80px; */
+}
+
+
+.page_services .circleContainer {
+    background-color: red;
+    position: relative;
+    /* margin-top: 100px; */
+}
+
+.page_services .circleContainer .circle {
+    height: 1550%;
+    width: 120%;
+    left: -10%;
+    border-radius: 0 0 50% 50%;
+    background-color: black;
+    z-index: 2;
+    position: absolute;
+    box-shadow: 0px 60px 50px rgba(0, 0, 0, 0.748);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* |||||| media queries |||||| */
+@media(max-width:520px) {
+
+
+
+    .page_services .circleContainer {
+        display: none;
+    }
+}

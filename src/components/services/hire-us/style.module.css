@@ -1,0 +1,57 @@
+.section_hireus {
+    padding-top: 140px;
+
+    position: relative;
+    z-index: 2;
+
+    background: rgb(0, 0, 0);
+    background: -moz-linear-gradient(1800deg, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(1800deg, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(1800deg, rgba(0, 0, 0, 1) 86%, rgba(0, 0, 0, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=1);
+}
+
+.section_hireus .title {
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.section_hireus .hire_wrap {
+    background-color: #ffffff12;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 8px;
+}
+
+.section_hireus .hire_wrap .icon {
+    display: inline-block;
+    background-color: #ffffff12;
+    padding: 18px;
+    border-radius: 10px;
+}
+
+.section_hireus .hire_wrap .icon img {
+    width: 50px;
+    filter: invert(1);
+}
+
+.section_hireus .hire_wrap p {
+    font-size: 15px;
+    color: #999999;
+}
+
+.section_hireus .hire_wrap .quote {
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    background: #00000054;
+    padding: 9px 21px;
+    /* margin: 20px 0 0; */
+    border-radius: 39px;
+    display: inline-block;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+    gap: 40px;
+}
+
+
+// |||||| media queries   |||||||||
+@media(max-width:768px) {
+    .footer {
+
+        justify-content: space-between;
+        gap: 13px;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}

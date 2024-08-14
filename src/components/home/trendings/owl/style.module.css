@@ -1,0 +1,57 @@
+.blog_card {
+    border-radius: 15px;
+    background-color: #4c4c4c78;
+    margin: 8px;
+    min-height: 300px;
+}
+
+.blog_card .title {
+    font-weight: 600;
+}
+
+.blog_card small {
+    font-size: 12px;
+    color: #E01F1D;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.blog_card p {
+    font-size: 15px;
+}
+
+.blog_card .more {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+.industry_card {
+    border-radius: 15px;
+    min-height: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.industry_card .title {
+    color: white;
+    filter: drop-shadow(3px 3px 8px black);
+}
+
+.industry_card .more {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    background-color: #ffffff80;
+    padding: 5px 13px;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    display: inline-block;
+    font-size: 15px;
+}
